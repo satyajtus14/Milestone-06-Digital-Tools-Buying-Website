@@ -5,9 +5,9 @@
     "description": "All-in-one workspace for notes, tasks, and projects\nCollaborate with teams in real-time",
     "price": 0,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["Custom templates", "Team collaboration", "Database integration"]
   },
   {
@@ -16,9 +16,9 @@
     "description": "Design and prototype user interfaces\nWork seamlessly with team members",
     "price": 12,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-    "tagType": "best seller",
+    "tagType": "Best Seller",
     "features": ["Vector graphics", "Interactive prototyping", "Collaboration tools"]
   },
   {
@@ -27,9 +27,9 @@
     "description": "Team communication and collaboration platform\nOrganize conversations by channels",
     "price": 0,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["Channels & threads", "File sharing", "App integrations"]
   },
   {
@@ -38,9 +38,9 @@
     "description": "Graphic design tool for beginners and pros\nCreate social media graphics and presentations",
     "price": 12.99,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "icon": "https://i.ibb.co/0yJC3Cnn/Canva-New-Logo.png",
-    "tagType": "best seller",
+    "tagType": "Best Seller",
     "features": ["Templates", "Stock photos", "Brand kit"]
   },
   {
@@ -49,9 +49,9 @@
     "description": "Project management with boards and cards\nTrack tasks visually and efficiently",
     "price": 0,
     "period": "monthly",
-    "tag": "new",
+    "tag": "New",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Trello-logo-blue.svg",
-    "tagType": "new",
+    "tagType": "New",
     "features": ["Kanban boards", "Automation", "Team collaboration"]
   },
   {
@@ -60,9 +60,9 @@
     "description": "Video conferencing made simple\nHost meetings and webinars with ease",
     "price": 14.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "icon": "https://i.ibb.co/w1NPRNZ/zoom-logo.avif",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["HD video/audio", "Screen sharing", "Breakout rooms"]
   },
   {
@@ -71,9 +71,9 @@
     "description": "AI-powered writing assistant\nImprove grammar, clarity, and style",
     "price": 12,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "icon": "https://i.ibb.co/qLqb7wjC/grammarly.jpg",
-    "tagType": "best seller",
+    "tagType": "Best Seller",
     "features": ["Grammar check", "Plagiarism detection", "Tone suggestions"]
   },
   {
@@ -82,9 +82,9 @@
     "description": "Automate workflows between apps\nSave time by connecting your tools",
     "price": 19.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "icon": "https://i.ibb.co/B2N6bT13/Zapier-logo-svg.png",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["Workflow automation", "App integrations", "Task scheduling"]
   },
   {
@@ -93,9 +93,9 @@
     "description": "Manage projects and tasks with ease\nCollaborate and track team progress",
     "price": 0,
     "period": "monthly",
-    "tag": "new",
+    "tag": "New",
     "icon": "https://i.ibb.co/chgzHWvS/Asana-Logo.png",
-    "tagType": "new",
+    "tagType": "New",
     "features": ["Task tracking", "Project timelines", "Team collaboration"]
   },
   {
@@ -104,9 +104,9 @@
     "description": "Design and prototype apps and websites\nCreate interactive user experiences",
     "price": 9.99,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
-    "tagType": "best seller",
+    "tagType": "Best Seller",
     "features": ["UI/UX design", "Prototyping", "Collaboration tools"]
   }
 ]
