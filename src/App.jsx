@@ -18,6 +18,9 @@ function App() {
     <>
     <NavBar/>
     <Banner/>
+
+    {/* Create Tabs for toggling cards and count value */}
+    
     <Suspense>
       <DigiModel modelPromise={modelPromise}/>
     </Suspense>
