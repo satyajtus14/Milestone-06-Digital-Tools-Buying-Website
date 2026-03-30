@@ -1,0 +1,58 @@
+.grad-outline-btn {
+    position: relative;
+    border: none;
+    background: white;
+    z-index: 0;
+    transition: transform 0.2s ease;
+  
+    /* gradient text */
+    color: transparent;
+    background-image: linear-gradient(to right, #4f39f6, #9514fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  /* gradient border */
+  .grad-outline-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px; /* border thickness */
+    background: linear-gradient(to right, #4f39f6, #9514fa);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* gradient background (hidden until hover) */
+  .grad-outline-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(to right, #4f39f6, #9514fa);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* hover: fill bg + white text */
+  .grad-outline-btn:hover {
+    color: white;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    background-image: none;
+    background: transparent;
+    transform: translateY(-2px);
+  }
+  .grad-outline-btn:hover::before { opacity: 0; }
+  .grad-outline-btn:hover::after  { opacity: 1; }
+  
