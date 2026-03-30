@@ -1,5 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import shoppingCart from '../assets/products/shopping-cart.png'
+
 
 const Cart = ({carts,setCarts}) => {
 
@@ -20,6 +22,15 @@ const Cart = ({carts,setCarts}) => {
     return (
         <div className='p-10 max-w-7xl mx-auto hover:border-2 border-blue-500'>
             <h1 className='text-2xl font-bold '> Your Cart</h1>
+         {   
+            carts.length === 0 ? <div>
+                <div className='font-semibold text-2xl text-center'>
+                 <img className='mx-auto w-30 h-30' src={shoppingCart} />
+                 <h2>Your Shopping Cart is now empty !!!</h2>
+                </div>
+            </div> :
+        <>
+    <div> 
             <div className='space-y-5 mt-4'>
                 {
                     carts.map(item =>
@@ -53,6 +64,9 @@ const Cart = ({carts,setCarts}) => {
 
             </div>
             <button onClick={handlePayment} className='btn w-full mt-5 bg-gradient-to-t from-[#4f39f6] to-[#9514fa] text-white text-2xl rounded-lg'>Proceed to Checkout</button>
+        </div>    
+        </>
+       } 
         </div>
     );
 };

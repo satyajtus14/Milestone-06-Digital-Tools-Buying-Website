@@ -10,7 +10,7 @@ const ModelCard = ({model,carts,setCarts}) => {
     
     const handleBuyNow =()=>{
         setIsBuyNow(true);
-        toast.success('Item Added To Cart');
+  
 
       const isFoundItem = carts.find(item => item.id === model.id)
         
@@ -30,7 +30,7 @@ const ModelCard = ({model,carts,setCarts}) => {
          <div key={model.id} className='relative shadow-lg rounded-lg border overflow-hidden border-zinc-300' >
           <div>
           <label
-          className={`absolute top-0 right-0 mr-3 rounded-xl border overflow-hidden p-2 mt-2 ${
+          className={`absolute top-0 right-0 mr-3 rounded-lg border overflow-hidden p-1 py-2 mt-3 ${
           model.tagType === "Popular"
           ? "bg-amber-300 text-amber-700"
          : model.tagType === "New"

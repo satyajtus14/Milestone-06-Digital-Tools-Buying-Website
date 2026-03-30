@@ -30,8 +30,17 @@ const NavBar = ({carts}) => {
           </ul>
         </div>
         <div className="navbar-end gap-3">
-         
-          <a> <FiShoppingCart />{carts.length}</a>
+         <div className='relative inline-flex'>
+          <button className='btn btn-ghost btn-circle'>
+          <a className='w-7 h-7 '> <FiShoppingCart size={24} /></a>
+          </button>
+         <span className='badge badge-error badge-sm absolute 
+           -top-1.5 -right-1.5 border-2 border-base-100 text-white'>
+         {carts.length}
+          </span> 
+        
+         </div>
+          
           <a> Login</a>
           <a className="btn bg-gradient-to-t from-[#4f39f6] to-[#9514fa] rounded-full text-white">Get Started</a>
         </div>
