@@ -75,7 +75,7 @@ Installation Steps
 
 # 5. Key Components
 
-5.1. App.jsx (Main Component)
+# 5.1. App.jsx (Main Component)
 
 	•	Purpose: Orchestrates the application state (tabs, cart) and renders child components.
 	•	Key Logic:
@@ -88,7 +88,7 @@ const [carts, setCarts] = useState([]);
 
 const modelPromise = getModel(); // Async fetch of models.json
 
-5.2. DigiModels.jsx (Digital Tools Listing)
+# 5.2. DigiModels.jsx (Digital Tools Listing)
 
 Purpose: Displays a grid of Digital Tools using ModelCard.
 
@@ -107,7 +107,7 @@ return (
   </div>
 );
 
-5.3. ModelCard.jsx (Individual Model UI)
+# 5.3. ModelCard.jsx (Individual Model UI)
 Purpose: Represents a single Digital Tools model with:
 Icon Image, title, description, price, features, and tag-status badge.
 "Add to Cart" button with toast feedback.
@@ -126,7 +126,7 @@ Uses react-toastify for success/error messages.
         setCarts([...carts,model])
         toast.success(`Wow Your ${model.title} item added!`);
     }
-5.4. Cart.jsx (Shopping Cart)
+# 5.4. Cart.jsx (Shopping Cart)
 Purpose: Displays cart contents and allows removal of items.
 Key Features:
 Calculates total price via reduce().
@@ -142,7 +142,8 @@ const handleDelete = (item) => {
 
 5.5. NavBar.jsx (Navigation)
 Purpose: Provides global navigation with:
-Logo, menu items (Products, Features, Pricing, Testimonials, FAQ), with Cart icon and a "Get Started" button.
+Logo, menu items (Products, Features, Pricing, Testimonials, FAQ, Login with Cart icon, and a "Get Started" button).
+
 Key Features:
 Responsive design (hidden on mobile, full menu on desktop).
 <div className="navbar">
@@ -167,6 +168,7 @@ Responsive design (hidden on mobile, full menu on desktop).
 # 6. Configuration
 
 6.1. package.json
+
 Scripts:
 
 Script	Command	Description
