@@ -97,21 +97,14 @@ Uses use() hook to await modelPromise.
 Renders models in a responsive grid (grid-cols-1 md:grid-cols-2 lg:grid-cols-3).
 
 
-const DigiModel = ({modelPromise,carts,setCarts}) => {
+const modelData = use(modelPromise);
 
-    const modelData = use(modelPromise);
-    console.log(modelData);
-    return (
-        <div className='max-w-7xl mx-auto'>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10'>
-                {
-                    modelData.map(model => 
-                    <ModelCard key={model.id} model={model} carts={carts} setCarts={setCarts}/>    
-                    )
-                }
-
-            </div>
-        </div>
-    );
+return (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {modelData.map((model) => (
+      <ModelCard key={model.id} model={model} carts={carts} setCarts={setCarts}/>
+    ))}
+  </div>
+);
 
 
