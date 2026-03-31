@@ -165,26 +165,34 @@ Responsive design (hidden on mobile, full menu on desktop).
 	<button className='btn btn-ghost btn-circle'>
           <a className='w-7 h-7 '> <FiShoppingCart size={24} /></a>
           </button>
-	  <a> Login</a>
-    <a className="btn bg-red-500 rounded-full text-white">Get Started</a>
+			  
+	  <li><a>Login</a></li>
+	<li><a>Get Started</a></li> 
+    
   </div>
 
 # 6. Configuration
 
 # 6.1. package.json
 
-Scripts:
+## 📜 Scripts
 
-Script	Command	Description
-dev	vite	Starts the development server.
-build	vite build	Generates production-ready files.
-lint	eslint .	Runs ESLint for code quality checks.
-preview	vite preview	Serves the production build locally.
-Dependencies:
+| Script  | Command        | Description                              |
+|---------|---------------|------------------------------------------|
+| dev     | vite          | Starts the development server            |
+| build   | vite build    | Generates production-ready files         |
+| lint    | eslint .      | Runs ESLint for code quality checks      |
+| preview | vite preview  | Serves the production build locally      |
 
-@tailwindcss/vite, lucide-react, react-toastify: UI and utility libraries.
-react, react-dom: Core React dependencies.
-Dev Dependencies:
+## 📦 Dependencies
 
-@vitejs/plugin-react: React plugin for Vite.
-eslint, daisyui: Linting and styling tools.
+- **react, react-dom** → Core React libraries  
+- **@tailwindcss/vite** → Tailwind CSS integration with Vite  
+- **lucide-react** → Icon library  
+- **react-toastify** → Toast notification system  
+
+## 🛠 Dev Dependencies
+
+- **@vitejs/plugin-react** → Enables React support in Vite  
+- **eslint** → Linting for code quality  
+- **daisyui** → Tailwind CSS component library  
