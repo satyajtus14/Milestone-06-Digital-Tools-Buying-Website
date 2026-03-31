@@ -56,14 +56,15 @@ const Banner = () => {
               <img
                 className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
                 src={BannerImage}
-                alt="AI Models Banner"
+                alt="DigiTools Models Banner"
               />
             </div>
           </div>
         </div>
       </div>
       
-      <div className='h-50 w-full text-white bg-gradient-to-r from-[#4f39f6] via-[#9514fa] from-[#4f39f6] flex justify-evenly items-center'>
+      {/* Ribbon Section need remove from bottom of banner */}
+{/*       <div className='h-50 w-full text-white bg-gradient-to-r from-[#4f39f6] via-[#9514fa] from-[#4f39f6] flex justify-evenly items-center'>
         <div className='flex flex-col items-center gap-1'>
         <h1 className='font-bold text-6xl'>50k+</h1>
         <p>Active Users</p>
@@ -85,7 +86,7 @@ const Banner = () => {
       
 
     </div>
-    
+     */}
     <div className='text-center'>
       <h1 className='text-6xl font-bold'>Premium Digital Tools</h1> <br />
       <p className='text-[#627382]'>

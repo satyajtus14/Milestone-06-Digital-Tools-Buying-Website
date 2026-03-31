@@ -6,6 +6,7 @@ import Footer from './component/Footer'
 import NavBar from './component/NavBar'
 import DigiModel from './component/DigiModel'
 import Cart from './component/Cart'
+import OtherStaticElements from './component/OtherStaticElements'
 
 
 const getModels = async () => {
@@ -50,6 +51,7 @@ const [carts,setCarts] = useState([])
       {activeTab === 'products' && <DigiModel modelPromise={modelPromise} carts={carts}setCarts={setCarts}/> }
       {activeTab === 'cart' && <Cart carts={carts} setCarts={setCarts} />}
     </Suspense>
+    <OtherStaticElements/>
     <Footer/>
     </>
   )
