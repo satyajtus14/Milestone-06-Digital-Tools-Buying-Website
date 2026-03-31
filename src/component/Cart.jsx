@@ -25,7 +25,7 @@ const Cart = ({carts,setCarts}) => {
          {   
             carts.length === 0 ? <div>
                 <div className='font-semibold text-2xl text-center'>
-                 <img className='mx-auto w-30 h-30' src={shoppingCart} />
+                 <img className='mx-auto w-30 h-30 mb-4' src={shoppingCart} />
                  <h2>Your Shopping Cart is now empty !!!</h2>
                 </div>
             </div> :

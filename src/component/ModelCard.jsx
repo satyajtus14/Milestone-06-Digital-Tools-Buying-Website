@@ -11,7 +11,6 @@ const ModelCard = ({model,carts,setCarts}) => {
     const handleBuyNow =()=>{
         setIsBuyNow(true);
   
-
       const isFoundItem = carts.find(item => item.id === model.id)
         
         if(isFoundItem){
