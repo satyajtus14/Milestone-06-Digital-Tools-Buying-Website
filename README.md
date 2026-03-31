@@ -162,12 +162,16 @@ Responsive design (hidden on mobile, full menu on desktop).
     </ul>
   </div>
   <div className="navbar-end gap-5">
+	<button className='btn btn-ghost btn-circle'>
+          <a className='w-7 h-7 '> <FiShoppingCart size={24} /></a>
+          </button>
+	  <a> Login</a>
     <a className="btn bg-red-500 rounded-full text-white">Get Started</a>
   </div>
 
 # 6. Configuration
 
-6.1. package.json
+# 6.1. package.json
 
 Scripts:
 
