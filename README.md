@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.png" alt="Logo" width="120" />
+  <img src="public/logo.png" alt="Logo" width="200" />
 </p>
 
 <h1 align="center"># 🚀 Digital Tools Buying Application</h1>
@@ -16,7 +16,7 @@ Live Link:
 2. Netlify: https://milestone-06-digital-tools-buying-web.netlify.app/ 
 
 # 1. Overview
-The Digital Tools app is a web application built with React, Vite, and Tailwind CSS that allows users to browse, select, and digital tools with subscribe to various digital tools plans. The application provides a unified subscription model for accessing multiple digital tool services under a single plan.
+The Digital Tools app is a web application built with React, Vite, and Tailwind CSS that allows users to browse, select, and subscribe to various digital tools plans. The application provides a unified subscription model for accessing multiple digital tool services under a single plan.
 
 # Key Features
 	•	Digital tool Catalog: Displays a list of digital tools with descriptions, pricing, and status indicators.
