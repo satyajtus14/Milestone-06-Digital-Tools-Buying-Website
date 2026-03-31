@@ -195,4 +195,85 @@ Responsive design (hidden on mobile, full menu on desktop).
 
 - **@vitejs/plugin-react** → Enables React support in Vite  
 - **eslint** → Linting for code quality  
-- **daisyui** → Tailwind CSS component library  
+- **daisyui** → Tailwind CSS component library
+
+# 6.2. vite.config.js
+Purpose: Configures Vite plugins.
+
+# Key Settings:
+Enables React support via @vitejs/plugin-react.
+Integrates Tailwind CSS via @tailwindcss/vite.
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(),tailwindcss(),],
+})
+
+
+# 6.3. eslint.config.js
+
+Purpose: Configures ESLint for React projects.
+
+Key Rules:
+Enforces React hooks (react-hooks) and refresh rules.
+Extends @eslint/js for base JavaScript rules.
+Ignores dist/ directory.
+import js from '@eslint/js';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+    },
+  },
+]);
+
+
+# 7. Data Flow
+
+Model Data:
+
+-> Loaded asynchronously from public/models.json via fetch().
+Stored in modelPromise and rendered via use() hook.
+Cart State:
+
+-> Managed locally in App.jsx via useState.
+Passed down to ModelCard and Cart components.
+User Feedback:
+
+-> Success/error messages handled by react-toastify.
+
+
+# 8. Styling
+# 8.1. index.css
+
+Purpose: Global styles and Tailwind/DaisyUI imports.
+
+Key Rules:
+Sets default font (Outfit from Google Fonts).
+Imports Tailwind and DaisyUI plugins.
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+# 8.2. Tailwind/DaisyUI Classes
+
+Example Components:
+i. ModelCard: Uses shadow-lg, rounded-3xl, and border-zinc-300.
+ii. Cart: Employs bg-zinc-100, hover:border-red-600/50 for interactive states.
+iii. Banner: Leverages bg-linear-to-r for gradient text.
