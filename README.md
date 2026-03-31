@@ -28,7 +28,7 @@ Key Features
 | Notifications  | react-toastify (v11.0.5)           | User feedback via toast notifications        |
 | Icons          | Lucide React (v1.3.0)              | Customizable SVG icons for UI elements       |
 
-# Project Structure
+# 3. Project Structure
 digital-tool-buying-application/
 ├── public/                                    
 │   ├── index.html                             
@@ -53,7 +53,7 @@ digital-tool-buying-application/
 
 
 
-4. Setup & Installation
+# 4. Setup & Installation
 Prerequisites
 
 	•	Node.js (v18+ recommended)
@@ -73,7 +73,7 @@ Installation Steps
 	◦	Outputs optimized files to the dist/ directory.
 
 
-6. Key Components
+#5 . Key Components
 
 5.1. App.jsx (Main Component)
 
