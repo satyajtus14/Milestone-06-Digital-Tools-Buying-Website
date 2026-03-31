@@ -9,7 +9,7 @@ Live Link:
 # 1. Overview
 The Digital Tools app is a web application built with React, Vite, and Tailwind CSS that allows users to browse, select, and digital tools with subscribe to various digital tools plans. The application provides a unified subscription model for accessing multiple digital tool services under a single plan.
 
-Key Features
+# Key Features
 	•	Digital tool Catalog: Displays a list of digital tools with descriptions, pricing, and status indicators.
 	•	Shopping Cart: Users can add digital tools to a cart and view their selections.
 	•	Responsive UI: Built with Tailwind CSS and DaisyUI for a modern, responsive design.
