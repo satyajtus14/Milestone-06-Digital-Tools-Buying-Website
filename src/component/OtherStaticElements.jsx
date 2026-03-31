@@ -9,7 +9,7 @@ const OtherStaticElements = () => {
     <div>
       <div className="mt-25">
         {/* Ribbon section */}
-        <div className="h-50 w-full text-white bg-gradient-to-r from-[#4f39f6] via-[#9514fa] from-[#4f39f6] flex justify-evenly items-center">
+        <div className="h-50 w-full text-white bg-linear-to-r from-[#4f39f6] via-[#9514fa] from-[#4f39f6] flex justify-evenly items-center">
           <div className="flex flex-col items-center gap-1">
             <h1 className="font-bold text-6xl">50k+</h1>
             <p>Active Users</p>
@@ -132,6 +132,7 @@ const OtherStaticElements = () => {
         </section>
 
         {/* Transparent Pricing Section */}
+
         <section className="mt-35">
           <div className="border-2 border-base-300 rounded-xl">
             <div>
@@ -145,7 +146,7 @@ const OtherStaticElements = () => {
             </div>
 
             {/* Three cards display membership price */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-5 mt-5 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-5 mt-5 mb-8">
               {/* Card-1 */}
               <div className="border-2 border-base-300 rounded-3xl p-4">
                 <h2 className="text-lg font-bold">Starter</h2>
@@ -193,7 +194,7 @@ const OtherStaticElements = () => {
               </div>
 
               {/* Card-2 */}
-              <div className="border-2 border-base-300 bg-gradient-to-t from-[#4f39f6] to-[#9514fa] text-white rounded-3xl p-4">
+              <div className="border-2 border-base-300 bg-linear-to-t from-[#4f39f6] to-[#9514fa] text-white rounded-3xl p-4">
                  <div className="relative inline-flex">
                     <button className="btn btn-ghost btn-circle"></button>
                     <span
@@ -257,7 +258,7 @@ const OtherStaticElements = () => {
 
                 <div className="mt-8">
                 <button 
-            className="btn w-full text-[#9514fa] rounded-xl mt-5 bg-white h-15" >Start Pro Trial</button>
+            className="btn w-full text-[#9514fa] rounded-xl mt-5 bg-white h-15 text-xl font-bold" >Start Pro Trial</button>
                 </div>
               </div>
 
@@ -321,21 +322,24 @@ const OtherStaticElements = () => {
               </div>
 
             </div>
-          </div>
-        </section>
+          </div> 
+        </section> 
 
      {/* Bottom Ribbon */}
         <section>
-      <div className='p-10 h-80 w-full text-white bg-gradient-to-r from-[#4f39f6] via-[#9514fa] from-[#4f39f6]'>
-        <h1 className='text-center font-bold text-center text-6xl'>Ready to Transform Your Workflow?</h1>
-        <p className='text-center mt-3 mb-3'>Join thousands of professionals who are already using Digitools to work smarter. <br />
+      <div className='w-full text-white 
+                     bg-gradient-to-r from-[#4f39f6] via-[#9514fa] to-[#4f39f6]
+                     px-4 py-10 sm:px-6 md:px-10 lg:px-20'>
+        <h1 className='text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-tight'>Ready to Transform Your Workflow?</h1>
+        <p className='text-center mt-3 mb-5
+      text-sm sm:text-base md:text-lg'>Join thousands of professionals who are already using Digitools to work smarter. <br />
         Start your free trial today.</p>
       
-        <div className="mt-3 flex justify-center items-center gap-2">
-            <button className="btn rounded-full text-[#9514fa]">Explore Products</button>
-            <button className="btn rounded-full text-white btn-outline bg-[#9514fa] p-5">View Pricing</button>
+        <div className="mt-4 flex flex-col sm:flex-row justify-center items-center gap-3">
+            <button className="btn rounded-full text-[#9514fa] w-full sm:w-auto">Explore Products</button>
+            <button className=" btn rounded-full text-white btn-outline bg-[#9514fa] w-full sm:w-auto px-6 py-3">View Pricing</button>
         </div>
-        <p className="mb-8 text-center p-5">14-day free trial • No credit card required • Cancel anytime</p>
+        <p className=" mt-6 text-center text-xs sm:text-sm md:text-base">14-day free trial • No credit card required • Cancel anytime</p>
      
         
      </div>

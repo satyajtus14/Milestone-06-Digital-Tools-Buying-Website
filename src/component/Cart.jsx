@@ -20,7 +20,7 @@ const Cart = ({carts,setCarts}) => {
     }
 
     return (
-        <div className='p-10 max-w-7xl mx-auto hover:border-2 border-blue-500'>
+        <div className='p-10 max-w-7xl mx-auto hover:border-2 border-blue-500 mb-4 mt-4'>
             <h1 className='text-2xl font-bold '> Your Cart</h1>
          {   
             carts.length === 0 ? <div>
@@ -63,7 +63,7 @@ const Cart = ({carts,setCarts}) => {
                 <div className='font-bold text-3xl'>${totalPrice}</div>
 
             </div>
-            <button onClick={handlePayment} className='btn w-full mt-5 bg-gradient-to-t from-[#4f39f6] to-[#9514fa] text-white text-2xl rounded-lg'>Proceed to Checkout</button>
+            <button onClick={handlePayment} className='btn w-full mt-5 bg-linear-to-t from-[#4f39f6] to-[#9514fa] text-white text-2xl rounded-lg'>Proceed to Checkout</button>
         </div>    
         </>
        } 

@@ -52,6 +52,7 @@ const [carts,setCarts] = useState([])
       {activeTab === 'cart' && <Cart carts={carts} setCarts={setCarts} />}
     </Suspense>
     <OtherStaticElements/>
+    {/* {carts.length > 0 ? <OtherStaticElements/> : null} */}
     <Footer/>
     </>
   )
