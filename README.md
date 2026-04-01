@@ -13,7 +13,7 @@
 
 Live Link:
 1. GitHub: https://satyajtus14.github.io/Milestone-06-Digital-Tools-Buying-Website/
-2. Netlify: https://milestone-06-digital-tools-buying-web.netlify.app/ 
+2. Netlify: https://digitaltoolbuyingapp-sj.netlify.app/
 
 # 1. Overview
 The Digital Tools app is a web application built with React, Vite, and Tailwind CSS that allows users to browse, select, and subscribe to various digital tools plans. The application provides a unified subscription model for accessing multiple digital tool services under a single plan.
