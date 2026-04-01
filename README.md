@@ -66,9 +66,11 @@ This project is a sophisticated "Digital Tools Buying Website" designed to provi
 
 
 **Build Tool:**
+
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
 **Code Quality:**
+
 [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)    
 
 ## 🚀 Quick Start
